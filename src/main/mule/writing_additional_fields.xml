@@ -20,5 +20,6 @@ payload ++ { address:'3871 loblolly'}]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<set-payload value="#[output application/json --- payload]" doc:name="Set Payload" doc:id="7232908c-d9ad-4691-8c5e-953cf2a9711c" />
+		<logger level="INFO" doc:name="Logger" doc:id="8a575eef-622a-45aa-bbfe-afca16b15382" message="#[payload]"/>
 	</flow>
 </mule>
